@@ -212,6 +212,12 @@ const Container = styled.div`
           font-family: Space Mono;
           text-align: right;
           width: 100%;
+          -moz-appearance: textfield;
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
           &:invalid {
             border-color: #d08a7a;
           }
@@ -261,6 +267,12 @@ const Container = styled.div`
             width: 100%;
             outline: none;
             border: none;
+            -moz-appearance: textfield;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
             &::placeholder {
               font-family: Space Mono;
               font-weight: bold;
